@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: azure;
+}
+
+.main {
+  position: relative;
+  background-color: #2b2e2e;
+  margin-top: 20px;
+}
+
+.profil {
+  height: 400px;
+  width: 60%;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.profil .nomU {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  left: 150px;
+  z-index: 2;
+}
+.profil .nomU h1 {
+  font-size: 30px;
+  color: white;
+  background-color: #77604a;
+}
+.profil .nomU h3 {
+  font-size: 15px;
+  background-color: black;
+  color: antiquewhite;
+  margin: -15px;
+}
+
+.imgCouverture {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 4px 4px #262627;
+          box-shadow: 4px 4px 4px 4px #262627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  position: absolute;
+}
+
+.suivre {
+  background-color: #59cce9;
+  border-radius: 30px;
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  z-index: 12;
+}
+
+.abonnes {
+  border: solid #c8c8e4;
+  border-radius: 30px;
+  height: 30px;
+  width: 135px;
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  z-index: 12;
+  color: aliceblue;
+}
+
+.imgProfile {
+  background-color: aqua;
+  border: solid #c8c8e4;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 80%;
+  right: 110%;
+  z-index: 12;
+}
+.imgProfile img {
+  border: solid #c8c8e4;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 12;
+}/*# sourceMappingURL=pro.css.map */

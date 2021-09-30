@@ -1,0 +1,465 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Source+Sans+Pro:300,400,600,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: azure;
+}
+
+.main {
+  position: relative;
+  background-color: aliceblue;
+  margin-top: 20px;
+}
+
+/* Cadre du profil*/
+.profil {
+  background-color: #94bebe;
+  border: solid #619191 20px;
+  height: 100%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  /* nom et nom d'utilisateur*/
+  /* image de couverture */
+}
+.profil .nomU {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  left: 150px;
+  z-index: 2;
+}
+.profil .nomU h1 {
+  font-size: 30px;
+  color: white;
+  background-color: #77604a;
+}
+.profil .nomU h3 {
+  font-size: 15px;
+  background-color: black;
+  color: antiquewhite;
+  margin: -15px;
+}
+.profil .imgCouverture {
+  width: 100%;
+  max-height: 50%;
+}
+
+.suivre {
+  background-color: #59cce9;
+  border-radius: 30px;
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  z-index: 12;
+}
+
+.abonnes {
+  border: solid #c8c8e4;
+  border-radius: 30px;
+  height: 30px;
+  width: 135px;
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  z-index: 12;
+  color: aliceblue;
+}
+
+.imgProfile {
+  background-color: aqua;
+  border: solid #c8c8e4;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 80%;
+  right: 110%;
+  z-index: 12;
+}
+.imgProfile img {
+  border: solid #c8c8e4;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 12;
+}
+
+/* Le Poste */
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post1 {
+  background-color: white;
+  border: solid #e0d5d5;
+  border-radius: 30px;
+  height: 400px;
+  width: 50%;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.post1 .imgP {
+  background-color: #1b1d1d;
+  height: 60px;
+  width: 60px;
+  border: solid #9d8bdf 7px;
+  border-radius: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.post1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.trait {
+  position: relative;
+  bottom: -100px;
+}
+
+.signature {
+  height: 10%;
+  width: 13%;
+  position: absolute;
+  left: 75%;
+  bottom: 10%;
+}
+
+/* Ecrire post */
+.writePost {
+  background-color: white;
+  border: solid #e0d5d5;
+  border-radius: 30px;
+  height: 200px;
+  width: 50%;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  overflow: hidden;
+}
+.writePost .imgP {
+  background-color: #1b1d1d;
+  height: 60px;
+  width: 60px;
+  border: solid #9d8bdf 7px;
+  border-radius: 30px;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.writePost img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+  background-color: #151728;
+  border-radius: 4px;
+}
+
+.status-menu {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid #cfb7b7 2px;
+}
+.status-menu-item {
+  text-decoration: none;
+  color: #ccc8db;
+  padding: 10px 14px;
+  line-height: 0.7;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #324f9e;
+}
+.status-menu-item.active, .status-menu-item:hover {
+  background-color: #2e2e40;
+  color: #fff;
+}
+.status-menu-item + .status-menu-item {
+  margin-left: 10px;
+}
+@media screen and (max-width: 500px) {
+  .status-menu {
+    font-size: 14px;
+  }
+  .status-menu-item + .status-menu-item {
+    margin-left: 0;
+  }
+}
+
+.status-img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.status-main {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #272a3a;
+  padding-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.status-textarea {
+  background-color: #151728;
+  width: 80%;
+  height: 32%;
+  border: solid white 5px;
+  border-radius: 60px;
+  position: absolute;
+  left: 16%;
+  bottom: 55px;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 1320px) {
+  .status-textarea {
+    width: 70%;
+    height: 25%;
+    position: absolute;
+    left: 27%;
+  }
+}
+
+.status-action {
+  text-decoration: none;
+  color: #ccc8db;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.status-action svg {
+  width: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+@media screen and (max-width: 1320px) {
+  .status-action {
+    width: 16px;
+    overflow: hidden;
+    color: transparent;
+    white-space: nowrap;
+  }
+}
+
+.status-share {
+  height: 25px;
+  width: 70px;
+  background-color: #145bad;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: auto;
+  -webkit-box-shadow: 0 0 5px #1b86f9;
+          box-shadow: 0 0 5px #1b86f9;
+  cursor: pointer;
+  position: absolute;
+  left: 80%;
+}
+@media screen and (max-width: 1320px) {
+  .status-share {
+    height: 20px;
+    width: 65px;
+    overflow: hidden;
+    font-size: 12px;
+  }
+}
+
+.acting {
+  list-style-type: none;
+  background-color: #8f98a9;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  position: relative;
+  top: 80px;
+}
+.acting li {
+  margin-top: 10px;
+}
+
+/* Fin écrire post */
+/* Box de commentaire */
+.commentaire {
+  height: 400px;
+  width: 25%;
+  border: solid #e0cece;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  left: 80%;
+  top: -300px;
+}
+.commentaire .e-entete {
+  height: 35px;
+  width: 100%;
+  border-bottom: solid #e0cece 0.7px;
+  text-align: center;
+}
+.commentaire .f-pied {
+  border-top: solid #e0cece 0.7px;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 72%;
+}
+.commentaire .f-pied #votreCommentaire {
+  background-color: #ced1e4;
+  border-radius: 30px;
+  height: 30px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  top: 25px;
+}
+.commentaire .f-pied #votreCommentaire:hover {
+  background-color: #7fd190;
+  border: solid #1b86f9 1px;
+}
+
+/*  Sous le profil */
+.underProfile {
+  height: 400px;
+  width: 100%;
+  background-color: #787c9b;
+  margin: auto;
+  position: relative;
+  bottom: -90px;
+}
+.underProfile .box-right {
+  border-radius: 10px;
+  height: 200px;
+  width: 20%;
+  background-color: #a9abbe;
+  position: absolute;
+  left: 2%;
+  top: 40%;
+}
+.underProfile .box-left {
+  height: 300px;
+  width: 20%;
+  background-color: #a9abbe;
+  position: absolute;
+  left: 78%;
+  top: 15%;
+}
+.underProfile .vxx {
+  height: 100px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #070707;
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  z-index: 1;
+}
+.underProfile .vVideos {
+  border: solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #070707;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+.underProfile .vPhotos {
+  border: solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #070707;
+  position: absolute;
+  left: 45%;
+  top: 5%;
+}
+.underProfile .vAmis {
+  border: solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #070707;
+  position: absolute;
+  left: 60%;
+  top: 5%;
+}
+.underProfile .vAbonnements {
+  border: solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #070707;
+  position: absolute;
+  left: 75%;
+  top: 5%;
+}
+.underProfile .box-vos {
+  height: 70px;
+  width: 100%;
+  border-bottom: #ced1e4 5px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}/*# sourceMappingURL=profil.css.map */

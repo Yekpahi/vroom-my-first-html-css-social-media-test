@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.cercle, .cercle .avatar, .all .profiler {
+  border: solid white 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px #6d5b3b;
+          box-shadow: 2px 2px 2px 2px #6d5b3b;
+}
+
+.pcp {
+  position: relative;
+}
+
+.all {
+  position: relative;
+  top: 100px;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all .profiler {
+  background-color: #c2b4cf;
+  border-radius: 30px;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.all .profiler .divEmoticones {
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 10px 10px #b7c4b7;
+          box-shadow: 10px 10px 10px 10px #b7c4b7;
+  background-color: aqua;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 5px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.all .profiler .divEmoticones .like {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+}
+.all .profiler .divEmoticones .like img {
+  width: 30px;
+  height: 30px;
+}
+.all .profiler .divEmoticones .like:hover {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+}
+.all .profiler .divEmoticones .like:hover img {
+  width: 35px;
+  height: 35px;
+}
+.all .profiler .divEmoticones .dislike {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 47%;
+}
+.all .profiler .divEmoticones .dislike img {
+  width: 30px;
+  height: 30px;
+}
+.all .profiler .divEmoticones .dislike:hover {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 47%;
+}
+.all .profiler .divEmoticones .dislike:hover img {
+  width: 35px;
+  height: 35px;
+}
+.all .profiler .divEmoticones .comment {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 85%;
+}
+.all .profiler .divEmoticones .comment img {
+  width: 30px;
+  height: 30px;
+}
+.all .profiler .divEmoticones .comment:hover {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 85%;
+}
+.all .profiler .divEmoticones .comment:hover img {
+  width: 35px;
+  height: 35px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+#commentClass {
+  border: solid black 1px;
+  border-radius: 50px;
+  background-color: #d4d4e4;
+  height: 800px;
+  width: 300px;
+  margin: 20px;
+  position: fixed;
+  top: 30%;
+  left: 80%;
+}
+
+.cercle, .cercle .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background: green;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+.cercle .avatar {
+  border: none;
+  top: -10%;
+  left: -7%;
+}
+
+.article {
+  color: aliceblue;
+  width: 50px auto;
+  height: 100px;
+  opacity: 1;
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  z-index: 1;
+}
+
+nav {
+  background-color: #a39ee2;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+nav li {
+  margin: 20px;
+  list-style-type: none;
+  font-size: 25px;
+  position: relative;
+}
+nav li img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  background-color: red;
+}
+nav .search {
+  position: relative;
+}
+nav .search .searchInput {
+  text-align: center;
+  margin: 20px;
+  border-radius: 50px;
+  height: px;
+}
+nav .search .loop {
+  width: 20px;
+  position: absolute;
+  left: 170px;
+  bottom: 25px;
+}/*# sourceMappingURL=cours.css.map */

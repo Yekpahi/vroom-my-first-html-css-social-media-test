@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+%bording {
+    border: solid white 5px;
+    box-shadow: 2px 2px 2px 2px rgb(109, 91, 59);
+}
+
+.pcp {
+    position: relative;
+}
+
+.all {
+    position: relative;
+    top: 100px;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .profiler {
+        @extend %bording;
+        background-color: rgb(194, 180, 207);
+        border-radius: 30px;
+        width: 500px;
+        height: 500px;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+
+        .divEmoticones {
+
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px 10px rgb(183, 196, 183);
+            background-color: aqua;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            left: auto;
+            right: auto;
+            bottom: 5px;
+            margin: auto;
+            text-align: center;
+            overflow: hidden;
+
+
+            .like {
+
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                bottom: 30px;
+                left: 5%;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 5%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+
+            .dislike {
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                bottom: 30px;
+                left: 47%;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 47%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+
+            .comment {
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                bottom: 30px;
+                left: 85%;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 85%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+
+}
+
+#commentClass {
+    border: solid black 1px;
+    border-radius: 50px;
+    background-color: rgb(212, 212, 228);
+    height: 800px;
+    width: 300px;
+    margin: 20px;
+    position: fixed;
+    top: 30%;
+    left: 80%;
+}
+
+.cercle {
+    @extend %bording;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: green;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+
+    .avatar {
+        @extend .cercle;
+        border: none;
+        top: -10%;
+        left: -7%;
+
+    }
+}
+
+.article {
+    color: aliceblue;
+    width: 50px auto;
+    height: 100px;
+    opacity: 1;
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    background-color: rgb(163, 158, 226);
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+
+    }
+
+    li {
+        margin: 20px;
+        list-style-type: none;
+        font-size: 25px;
+        position: relative;
+
+        img {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            background-color: red;
+        }
+
+
+    }
+
+    .search {
+        position: relative;
+
+        .searchInput {
+            text-align: center;
+            margin: 20px;
+            border-radius: 50px;
+            height: px;
+        }
+
+        .loop {
+            width: 20px;
+            position: absolute;
+            left: 170px;
+            bottom: 25px;
+
+        }
+    }
+
+}
